@@ -22,7 +22,7 @@ export function Navigation({page, setPage}) {
 }
 
 export function Loader() {
-    return (<div className="loader">.....</div>)
+    return (<div className="loader" data-testid="loader">.....</div>)
 }
 
 export default function Jokes() {
@@ -53,7 +53,7 @@ export default function Jokes() {
             <h2>Jokes</h2>
             {isLoading ? <Loader/> : null}
             {error ? <div> {error} </div> : null}
-            {jokes.length > 0 ? <JokesList jokes={jokes}/> : null}
+            <JokesList jokes={jokes}/>
             <Navigation page={currentPage} setPage={setCurrentPage}/>
         </div>
     )
