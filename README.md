@@ -1,8 +1,10 @@
-# Jokr
+# [Jokr](https://jokr-5b775.web.app/)
 
 Shows jokes consuming https://icanhazdadjoke.com/api
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Hosted on Firebase.
 
 ## Available Scripts
 
