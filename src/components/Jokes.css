@@ -2,7 +2,7 @@ body {
     background: #262a2b;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;

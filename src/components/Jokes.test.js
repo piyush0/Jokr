@@ -7,11 +7,10 @@ describe('Jokes', () => {
         render(<Navigation/>);
 
         const buttons = await screen.findAllByRole('button');
-
         expect(buttons).toHaveLength(2);
     });
 
-    test('Jokes List renders 10 elements', async () => {
+    test('Jokes List renders jokes', async () => {
         render(<JokesList jokes={mockJokesPage1}/>);
 
         const jokesList = screen.getByTestId('list');
@@ -23,7 +22,6 @@ describe('Jokes', () => {
 
     test('Page has a title', () => {
         render(<Jokes/>)
-
         const title = screen.getByText(/Jokes/i)
         expect(title).toBeInTheDocument();
     })
