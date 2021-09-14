@@ -23,11 +23,12 @@ body {
     text-align: left;
     border-radius: 0;
     outline: 1px solid #b7b7b7;
+    overflow-wrap: break-word;
 }
 
 .container li p {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1em;
+    line-height: 1.2em;
     margin-top: 5px;
 }
 
